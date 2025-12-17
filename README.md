@@ -5,3 +5,4 @@
 
 ___
 + Git 활용법
+  + [Git 용어 정리](https://github.com/ehdrjs421/TIL/blob/main/git_practice/git.md)
