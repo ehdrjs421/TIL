@@ -1,5 +1,7 @@
 # git 기초 Quiz
 1. git의 사전적 정의는 "(중앙) 버전 관리 프로그램"이다.
+    + 답 : x
+    + 이유 : git은 분산형 버전 관리 프로그램이다.
 2. git의 3공간은 working directory, staging area, repository 이다.
 3. github 에 버전을 저장하기 위해 git commit 명령어를 쓴다.
 4. git log 를 통해 버전 기록들의 목록을 확인할 수 있다.
