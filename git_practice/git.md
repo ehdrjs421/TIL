@@ -41,7 +41,7 @@
   + [.gitignore 파일 생성](https://www.toptal.com/developers/gitignore/)
 
 + branch 
-  - main에서 벗어나 독릭적으로 작업할 수 있는 공간
+  - main에서 벗어나 독립적으로 작업할 수 있는 공간
   - 장점
     - 원본(main)에 대한 안정성
     - 동시에 작업이 가능하여 체계적인 개발 가능
