@@ -70,16 +70,6 @@
     https://github.com/ehdrjs421/TIL/blob/main/python_practice/my_firtst_code.py
     
 
-## 조건문
-
-- if
-- if else
-- if elif else
-- 중복 if 문
-
-
-# Python
-
 ## 컨테이너 자료형
 
 https://www.notion.so/image/attachment%3A079cbfe7-1c00-4b11-8412-c78462b5621b%3Aimage.png%3FspaceId%3Df2678325-6f7b-4a25-b188-86c42030d6d5?table=block&id=2d0611ac-3a00-800c-a4d0-c7dd6373cbd2&cache=v2
@@ -133,15 +123,48 @@ https://www.notion.so/image/attachment%3A079cbfe7-1c00-4b11-8412-c78462b5621b%3A
 - 스트링 연산
     - `+ *`  연산자 사용 가능
 
-<aside>
-📒
-
 연산 후에 스트링은 새로운 주소값을 가지는 새로운 스트링
-
-</aside>
 
 - 인덱싱/슬라이싱은 리스트와 동일
 - 수정은 불가
+- 순서(위치)로 값을 관리
+---
+### 순서가 있는 자료 구조
+
+
+
+### 딕셔너리
+
+- 순서가 없는 자료 구조
+- key - value 한쌍의 구조
+    - key : 바뀔 수 없는 자료형 - 중복 불가
+1. 순서가 없는 컨테이너 
+    - 위치가 아닌 key 값을 통하여 접근
+2. 가변 자료형
+    - 변경 수정 삭제 가능 + 주소 변하지 않음
+    - 추가 할당도 가능
+
+`keys()`  딕셔너리 key 확인하기
+
+`values()` 딕셔너리 원소 확인하기
+
+`items()` 딕셔너리 key와 원소를 쌍으로 튜플로 반환
+
+### 집합
+
+1. 순서가 존재 하지 않음
+    - 수학적 집합의 특성을 그대로 따름
+    - 교집합 &, 합집합 |, 차집합 - 를 통해 구현 가능
+2. 가변 자료형
+    - 변경 수정 삭제 가능
+
+
+## 조건문
+
+- if
+- if else
+- if elif else
+- 중복 if 문
 
 ## 반복문
 
@@ -157,3 +180,14 @@ https://www.notion.so/image/attachment%3A079cbfe7-1c00-4b11-8412-c78462b5621b%3A
     
 
 ### while문
+
+### 반복문 제어
+
+- 반복문 중 계속해서 반복되어 무한 반복이 되는 경우 제어 필요
+    1. break  : 특정 조건을 만족할 시 반복문을 종료 한다.
+    2. else : break에 의해 종료되지 않은 경우 반복문을 종료하도록 한다.
+    3. continue : 특정 조건을 만족하면 나머지 코드를 건너 뛰고, 다음 반복을 진행한다.
+    4. pass : 코드에 오류가 발생하는 경우 넘어가서 코드를 진행한다.
+
+
+
