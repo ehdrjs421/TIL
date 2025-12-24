@@ -189,5 +189,54 @@ https://www.notion.so/image/attachment%3A079cbfe7-1c00-4b11-8412-c78462b5621b%3A
     3. continue : 특정 조건을 만족하면 나머지 코드를 건너 뛰고, 다음 반복을 진행한다.
     4. pass : 코드에 오류가 발생하는 경우 넘어가서 코드를 진행한다.
 
+## 함수
 
 
+- 코드 재사용을 위한 블랙 박스적인 블럭
+- 입력하면 블랙 박스 내에서 처리되고 결과를 반환
+
+- 정의
+
+`def function(parameter):`
+`return answer`
+
+- 호출
+
+`fuction(x)` 
+
+정의 하고 이후 호출하여 사용
+
+### 내장 함수
+
+- 파이썬에서 자체적으로 제공되는 함수
+1. `len()` 
+    - 컨테이너 자료형의 item 갯수를 세어 반환
+2. `sum()` 
+3. `min(), max()` 
+4. `sorted()` 
+    - 입력 받은 컨테이너 자료형을 정렬하여, **새로운** 리스트를 반환
+    - 기본은 오름차순
+5. `map()` 
+    - 컨테이너 자료형의 각 원소에 함수를 적용한 후, 그 결과를 반환
+    
+    `number_str = '12345'
+    numbers = list(map(int,number_str))`
+    
+
+### 익명함수
+
+- 계속 사용하는 함수와 달리 1회용의 경우 `lambda`를 이용
+
+ex) `sorted(list, key = lambda x :x[1])` 
+
+### method
+
+- 특정 자료형에서 사용되는 함수
+1. 리스트
+    - append, pop , insert, extend, remove, count~~, index~~, sort, reverse
+2. 문자열
+    - split, ~~(strip, lstrip, rstrip), (find, index), count, replace~~, join
+3. 딕셔너리
+    - get, pop, update, keys, values, items
+4. 집합
+    - (intersection, difference, union), add, update, (remove, discard)

@@ -101,3 +101,7 @@
 
 #     return len(reachable)
 
+
+a = [10]
+a.extend({10,20,30})
+print(a)
