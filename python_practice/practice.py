@@ -105,6 +105,10 @@
 # a = [10]
 # a.extend({10,20,30})
 # print(a)
+b = (1,2)
 
-b = {1,2,3,2,3}
+print(b)
+
+a = "HEllo word asld"
+b = a.split(" ")
 print(b)
