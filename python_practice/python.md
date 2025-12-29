@@ -240,3 +240,71 @@ ex) `sorted(list, key = lambda x :x[1])`
     - get, pop, update, keys, values, items
 4. 집합
     - (intersection, difference, union), add, update, (remove, discard)
+
+
+## 모듈
+
+- 특정 기능을 하는 코드를 파이썬 파일(.py) 단위로 작성한 것
+- `import module / from module import function`
+
+### 내장 모듈
+
+1. random
+    - `random.randint()` start~end 사이 정수 1개 추출
+    - `random.choice()` 리스트 중 1개 추출
+    - `random.sample()` 리스트 중 k개 추출
+    - `random.shuffle()`  전체 섞기
+
+1. time
+    - `time.time()`  초 단위 시간 / 1970년 1월 1일 부터
+    - `time.sleep()` 일정 시간 동안 프로그램 작동 정지
+
+## 예외 처리(Exception Handling)
+
+- 프로그램 실행 중 발생하는 예외 처리 방법
+- 예외 발생 시 프로그램 종료 외에 처리하는 방법을 정의
+
+```python
+try:
+# 실행할 코드
+	pass
+**except Exception as e:**
+# 예외가 발생했을 때 실행할 코드
+	pass
+else:
+# 예외가 발생하지 않았을 때 실행할 코드
+	pass
+finally:
+# 예외 발생 여부와 상관없이 항상 실행할 코드
+	pass
+```
+
+- 예외 종류
+    
+    `Exception`
+    
+    - 모든 예외의 기본으로 모든 예외에 대해 대응합니다.
+    
+    `ZeroDivisionError`
+    
+    - 0으로 나눴을 때 발생합니다.
+    
+    `AttributeError`
+    
+    - 존재하지 않는 객체 속성을 접근할 때 발생합니다.
+    
+    `IndexError`
+    
+    - 인덱스 범위를 벗어났을때 발생합니다.
+    
+    `SyntaxError`
+    
+    - 문법적 오류가 있을때 발생합니다.
+    
+    `IndentationError`
+    
+    - 들여쓰기가 잘못된 경우 발생합니다.
+    
+    `TypeError`
+    
+    - 연산 또는 함수를 적용할 때 자료형이 옳지않은 경우 발생합니다.
