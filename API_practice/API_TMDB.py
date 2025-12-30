@@ -6,7 +6,7 @@ import os
 load_dotenv()  # .env 파일의 변수들을 환경변수로 등록
 api_key = os.getenv('TMDB_KEY')  # 환경변수에서 API 키 불러오기
 
-print(api_key)  # 확인용, 실제 코드에서는 출력하지 않는 것이 안전
+
 # API 요청을 위한 기본 URL
 base_url = "https://api.themoviedb.org/3"
 
