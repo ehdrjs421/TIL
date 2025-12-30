@@ -1,6 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,visualstudiocode,python,pycharm
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,visualstudiocode,python,pycharm
-
+.venv
+.env
 ### macOS ###
 # General
 .DS_Store

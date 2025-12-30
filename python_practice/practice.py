@@ -102,13 +102,11 @@
 #     return len(reachable)
 
 
-# a = [10]
-# a.extend({10,20,30})
-# print(a)
-b = (1,2)
+a = [[-5,2],[2,1],[3,-6]]
+a.sort(key = lambda x : (-(x[0]+x[1]),-x[0]))
+print(a)
 
-print(b)
-
-a = "HEllo word asld"
-b = a.split(" ")
+b = [1,3]
+b.append(2)
+print(b.index(3))
 print(b)
