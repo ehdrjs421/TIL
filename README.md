@@ -10,3 +10,5 @@ ___
 + Python 활용법
   + [Python 기본 정리](https://github.com/ehdrjs421/TIL/blob/main/python_practice/python.md)
   + API 활용
++ SQL 활용법
+  + SQL 기본정리
