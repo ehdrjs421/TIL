@@ -102,11 +102,89 @@
 #     return len(reachable)
 
 
-a = [[-5,2],[2,1],[3,-6]]
-a.sort(key = lambda x : (-(x[0]+x[1]),-x[0]))
-print(a)
+# a = [[-5,2],[2,1],[3,-6]]
+# a.sort(key = lambda x : (-(x[0]+x[1]),-x[0]))
+# print(a)
 
-b = [1,3]
-b.append(2)
-print(b.index(3))
-print(b)
+
+# def board_check(board,place):
+#     board_num = len(board)
+#     directions = [(1,0),(0,1),(1,1),(1,-1)]
+#     for dx, dy in directions:
+#         for n in range(-num,num+1):
+#             nx, ny = dx*n + place[0], dy*n + place[1]
+#             if (0<=nx,ny<board_num):
+#                 board[nx][ny] = 1
+#     return board
+
+
+# def dfs(board,n):
+#     board_num = len(board)
+#     for i in range(board_num):
+#         for j in range(board_num):
+#             if board[i][j] == 0:
+#                 board = board_check(board,[i,j])
+
+
+# def a(b):
+#     b.append(1)
+#     return b
+
+# x = []
+# c = a(x)
+# print(id(x))
+# print(id(c))
+# print(x)
+
+# def solution(n, edges):
+#     answer = 0
+#     INF = max(max(edges))*n
+#     dist = [INF for _ in range(n)]
+#     check = [i+2 for i in range(n-1)]
+#     print(INF)
+#     dist[0] = 0
+
+#     for a,b,c in edges:
+#         if a == 1:
+#             dist[b] = c
+    
+    
+
+
+#     return answer
+# 다익스트라 알고리즘 풀다 맘
+
+a = [[0,3,2,0,10],[0,0,0,1,0],[0,0,11,4,1],[0,0,0,0,3],[0,0,0,0,0]]
+max_list = [max(i)for i in a]
+print(max_list)
+
+def solution(adjMat):
+    answer = []
+    n = len(adjMat)
+    max_list = [max(i) for i in adjMat]
+    INF = max(max_list) * (n + 1)
+    
+    dist = [INF] * (n + 1)
+    visited = [False] * (n + 1)
+    dist[1] = 0
+
+    for _ in range(n):
+        cur = -1
+        min_dist = INF
+
+        for i in range(1, n + 1):
+            if not visited[i] and dist[i] < min_dist:
+                min_dist = dist[i]
+                cur = i
+
+        if cur == -1:
+            break
+
+        visited[cur] = True
+
+        for nxt, cost in adjMat[cur]:
+            if not visited[nxt] and dist[nxt] > dist[cur] + cost:
+                dist[nxt] = dist[cur] + cost
+
+    return dist[n]
+# 다익스트라 또 풀다가 맘

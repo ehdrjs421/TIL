@@ -1,0 +1,28 @@
+import statistics
+import pandas as pd
+import numpy as np
+
+# point = pd.Series([85,90,78,95,88])
+
+# a = statistics.mean(point)
+# print(a)
+# b = statistics.median(point)
+# print(b)
+# c = statistics.multimode(point)
+# print(c)
+# scores = pd.Series([55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 37, 40, 20, 10, 90])
+# d = scores.max() - scores.min()
+# print(d)
+# e = scores.quantile(.75,interpolation = "higher")-scores.quantile(.25,interpolation= "lower")
+# print(e)
+
+
+A = pd.Series([70, 75, 80, 85, 90])
+B = pd.Series([70, 80, 80, 80, 90])
+A_var, A_std = A.var(), A.std()
+B_var, B_std = B.var(), B.std()
+print(A_var,A_std)
+print(B_var,B_std)
+# subjects = ["Python", "Java", "Python", "C++", "Python", "Java", "C++", "Python", "Data Science", "Data Science", "Python"]
+# e = statistics.multimode(subjects)
+# print(e)
